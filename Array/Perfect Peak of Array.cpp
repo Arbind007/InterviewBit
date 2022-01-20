@@ -12,7 +12,7 @@ int Solution::perfectPeak(vector<int> &A) {
     }
     for(int i=1;i<n-1;i++){
         if(A[i] == left[i] && A[i] == right[i]){
-            if(right[i+1]!=right[i]&&left[i+1]&&left[i]&&right[i]!=right[i-1]&&left[i]!=left[i-1])
+            if(right[i+1]!=right[i] && left[i+1]!=left[i] && right[i]!=right[i-1] && left[i]!=left[i-1])
                 return 1;
         }
     }
